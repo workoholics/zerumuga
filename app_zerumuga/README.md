@@ -1,4 +1,4 @@
-Ionic App Base
+Ionic project
 =====================
 
 A starting project for Ionic that optionally supports using custom SCSS.
