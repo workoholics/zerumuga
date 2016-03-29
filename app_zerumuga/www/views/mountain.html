@@ -1,0 +1,185 @@
+<ion-view ng-class="loading ? 'loading' : ''" style="width:{{screenWidth}}" class="mountain-screen {{mountain.id}}">
+	<ion-content>
+		<header>
+			<div class="mini-brand">
+				<a ng-href="#/"><span class="zmgicon-logo-zeru-volver"></span></a>
+			</div>
+			<h1>{{mountain.title}}<small>{{mountain.altitude}}</small></h1>
+		</header>
+		<section class="geo-data">
+			<div>
+				<p class="name">Garaiera</p>
+				<p class="value">{{mountain.altitude}}</p>
+			</div>
+			<div>
+				<p class="name">Goragunea</p>
+				<p class="value">{{mountain.prominence}}</p>
+			</div>
+			<div>
+				<p class="name">Koordenatuak</p>
+				<p class="value">{{mountain.coordinates}}</p>
+			</div>
+		</section>
+
+		<section class="short-description" ng-bind-html="mountain.shortDescription"></section>
+		<section class="banner-360" style="background-image:url('{{mountain.img360.bg}}')">
+			<a ng-click="openLink('{{mountain.img360.link}}','_system','location=yes')">
+				<h2>Gailurra 360ºtan</h2>
+			</a>
+		</section>
+		<section ng-show="mountain.information" class="information">
+			<div class="info-tabs">
+				<ul class="info-tabs-header">
+					<li ng-show="mountain.information.situation">
+						<a ng-click="infoTabs.select('situation')" ng-class="infoTabs.active === 'situation' || mountain.information.situation.active ? 'active':''"><span class="zmgicon-localizacion"></span></a>
+					</li>
+					<li ng-show="mountain.information.geology">
+						<a ng-click="infoTabs.select('geology')" ng-class="infoTabs.active === 'geology' || mountain.information.geology.active ? 'active':''"><span class="zmgicon-geologia"></span></a>
+					</li>
+					<li ng-show="mountain.information.flora">
+						<a ng-click="infoTabs.select('flora')" ng-class="infoTabs.active === 'flora' ? 'active':''"><span class="zmgicon-flora"></span></a>
+					</li>
+					<li ng-show="mountain.information.weather">
+						<a ng-click="infoTabs.select('weather')" ng-class="infoTabs.active === 'weather' ? 'active':''"><span class="zmgicon-clima"></span></a>
+					</li>
+					<li ng-show="mountain.information.fauna">
+						<a ng-click="infoTabs.select('fauna')" ng-class="infoTabs.active === 'fauna' ? 'active':''"><span class="zmgicon-fauna"></span></a>
+					</li>
+					<li ng-show="mountain.information.services">
+						<a ng-click="infoTabs.select('services')" ng-class="infoTabs.active === 'services' ? 'active':''">
+							<span class="zmgicon-servicios">
+						</a>
+					</li>
+				</ul>
+
+				<div ng-class="mountain.information.situation && infoTabs.active === 'situation' ? 'active' : ''" ng-show="mountain.information.situation && infoTabs.active === 'situation'" class="info-tabs-content">
+					<h3>{{mountain.information.situation.title}}</h3>
+					<div ng-bind-html="mountain.information.situation.text"></div>
+					<ion-scroll ng-show="mountain.information.situation.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+						<nav>
+							<ul>
+								<li  ng-repeat="slide in mountain.information.situation.slider.slides">
+									<img ng-src="{{slide.url}}"/>
+								</li>
+							</ul>
+						</nav>
+					</ion-scroll>
+				</div>
+				<div ng-class="mountain.information.geology && infoTabs.active === 'geology' ? 'active' : ''" ng-show="mountain.information.geology && infoTabs.active === 'geology'" class="info-tabs-content">
+					<h3>{{mountain.information.geology.title}}</h3>
+					<div ng-bind-html="mountain.information.geology.text"></div>
+					<ion-scroll ng-show="mountain.information.geology.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+						<nav>
+							<ul>
+								<li  ng-repeat="slide in mountain.information.geology.slider.slides">
+									<img ng-src="{{slide.url}}"/>
+								</li>
+							</ul>
+						</nav>
+					</ion-scroll>
+				</div>
+				<div ng-class="mountain.information.flora && infoTabs.active === 'flora' ? 'active' : ''" ng-show="mountain.information.flora && infoTabs.active === 'flora'" class="info-tabs-content">
+					<h3>{{mountain.information.flora.title}}</h3>
+					<div ng-bind-html="mountain.information.flora.text"></div>
+					<ion-scroll ng-show="mountain.information.flora.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+						<nav>
+							<ul>
+								<li  ng-repeat="slide in mountain.information.flora.slider.slides">
+									<img ng-src="{{slide.url}}"/>
+								</li>
+							</ul>
+						</nav>
+					</ion-scroll>
+				</div>
+				<div ng-class="mountain.information.weather && infoTabs.active === 'weather' ? 'active' : ''" ng-show="mountain.information.weather && infoTabs.active === 'weather'" class="info-tabs-content">
+					<h3>{{mountain.information.weather.title}}</h3>
+					<div ng-bind-html="mountain.information.weather.text"></div>
+					<ion-scroll ng-show="mountain.information.weather.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+						<nav>
+							<ul>
+								<li  ng-repeat="slide in mountain.information.weather.slider.slides">
+									<img ng-src="{{slide.url}}"/>
+								</li>
+							</ul>
+						</nav>
+					</ion-scroll>
+				</div>
+				<div ng-class="mountain.information.fauna && infoTabs.active === 'fauna' ? 'active' : ''" ng-show="mountain.information.fauna && infoTabs.active === 'fauna'" class="info-tabs-content">
+					<h3>{{mountain.information.fauna.title}}</h3>
+					<div ng-bind-html="mountain.information.fauna.text"></div>
+					<ion-scroll ng-show="mountain.information.fauna.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+						<nav>
+							<ul>
+								<li  ng-repeat="slide in mountain.information.fauna.slider.slides">
+									<img ng-src="{{slide.url}}"/>
+								</li>
+							</ul>
+						</nav>
+					</ion-scroll>
+				</div>
+				<div ng-show="mountain.information.services && infoTabs.active === 'services'" class="info-tabs-content">
+					<h3>{{mountain.information.services.title}}</h3>
+					<div ng-bind-html="mountain.information.services.text"></div>
+					<ion-scroll ng-show="mountain.information.services.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+						<nav>
+							<ul>
+								<li  ng-repeat="slide in mountain.information.services.slider.slides">
+									<img ng-src="{{slide.url}}"/>
+								</li>
+							</ul>
+						</nav>
+					</ion-scroll>
+				</div>
+			</div>
+		</section>
+		<section ng-show="mountain.textImageBlock">
+			<h3>{{mountain.textImageBlock.title}}</h3>
+			<div ng-bind-html="mountain.textImageBlock.text">
+			</div>
+		</section>
+		<ion-scroll ng-show="mountain.textImageBlock.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+			<nav>
+				<ul>
+					<li  ng-repeat="slide in mountain.textImageBlock.slider.slides">
+						<img ng-src="{{slide.url}}"/>
+					</li>
+				</ul>
+			</nav>
+		</ion-scroll>
+		<section ng-show="mountain.routes.text">
+			<h3>{{mountain.routes.title}}</h3>
+			<div ng-bind-html="mountain.routes.text">
+			</div>
+		</section>
+		<section class="routes-list">
+			<header>
+				<span class="title">
+					<span class="icon zmgicon-creditos"></span>
+					<p>{{mountain.routes.title}}</p>
+				</span>
+				<a ng-href="#/mountain-map/{{mountain.id}}"><span class="icon zmgicon-localizacion"></span></a>
+			</header>
+			<div class="routes-list-body">
+				<div class="routes-list-row">
+					<div class="routes-list-col" ng-repeat="route in mountain.routes.list">
+						<div ng-click="goTo('/mountain-map/{{mountain.id}}')" class="route">
+							<header>
+								<img ng-src="{{route.thumb}}"/>
+							</header>
+							<div class="route-body">
+								<h4>{{route.title}}</h4>
+								<p ng-show="route.level === 'easy'"><span class="icon zmgicon-ruta-facil"></span>Erraza</p>
+								<p ng-show="route.level === 'medium'"><span class="icon zmgicon-ruta-moderada"></span>Erdi mailakoa</p>
+								<p ng-show="route.level === 'dificult'"><span class="icon zmgicon-ruta-dificil"></span>Zaila</p>
+
+								<p><span class="icon zmgicon-tiempo"></span>{{route.duration}}</p>
+								<p><span class="icon zmgicon-distancia"></span>{{route.distance}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</ion-content>
+</ion-view>

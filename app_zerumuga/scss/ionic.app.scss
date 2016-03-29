@@ -1,0 +1,1792 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+@import "workostrap";
+
+$f-grey: #232323;
+
+$bg-grey: #c9c6c6;
+$bg-light-grey: #f5f5f5;
+
+$b-dark-grey: #9c9c9c;
+
+
+$green-fluor: #5ade8c;
+$dark-green-fluor: #4ec079;
+$pink: #ff9186;
+$dark-green: #557978;
+$green: #00ada5;
+$yellow: #ffbe1b;
+
+$brown: #593C2C;
+
+$blue: #4a72ad;
+
+$mountain-color: #fff;
+
+/* Fonts Amaranth */
+@font-face{
+	font-family: Amaranth;
+	src: url("../fonts/amaranth/Amaranth-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face{
+	font-family: Amaranth;
+	src: url("../fonts/amaranth/Amaranth-Italic.ttf");
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face{
+	font-family: Amaranth;
+	src: url("../fonts/amaranth/Amaranth-Bold.ttf");
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face{
+	font-family: Amaranth;
+	src: url("../fonts/amaranth/Amaranth-BoldItalic.ttf");
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* Fonts Raleway */
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-ExtraLight.ttf");
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-ExtraLightItalic.ttf");
+	font-style: italic;
+	font-weight: 200;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-Light.ttf");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-LightItalic.ttf");
+	font-style: italic;
+	font-weight: 300;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-Italic.ttf");
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-Medium.ttf");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-MediumItalic.ttf");
+	font-style: italic;
+	font-weight: 500;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-Bold.ttf");
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face{
+	font-family: Raleway;
+	src: url("../fonts/raleway/Raleway-BoldItalic.ttf");
+	font-style: italic;
+	font-weight: 600;
+}
+
+
+/* ZMG icons*/
+@font-face {
+    font-family: 'zmgicon';
+    src:    url('../fonts/zmgicon/zmgicon.eot?dj53gp');
+    src:    url('../fonts/zmgicon/zmgicon.eot?dj53gp#iefix') format('embedded-opentype'),
+        url('../fonts/zmgicon/zmgicon.ttf?dj53gp') format('truetype'),
+        url('../fonts/zmgicon/zmgicon.woff?dj53gp') format('woff'),
+        url('../fonts/zmgicon/zmgicon.svg?dj53gp#zmgicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="zmgicon-"], [class*=" zmgicon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'zmgicon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.zmgicon-workoholics:before {
+    content: "\e920";
+}
+
+.zmgicon-360-sphere:before {
+    content: "\e900";
+}
+.zmgicon-360:before {
+    content: "\e901";
+}
+.zmgicon-arrow:before {
+    content: "\e902";
+}
+.zmgicon-clima:before {
+    content: "\e903";
+}
+.zmgicon-creditos:before {
+    content: "\e904";
+}
+.zmgicon-distancia:before {
+    content: "\e905";
+}
+.zmgicon-fauna:before {
+    content: "\e906";
+}
+.zmgicon-filtro:before {
+    content: "\e907";
+}
+.zmgicon-flora:before {
+    content: "\e908";
+}
+.zmgicon-fuente:before {
+    content: "\e909";
+}
+.zmgicon-geologia:before {
+    content: "\e90a";
+}
+.zmgicon-lago:before {
+    content: "\e90b";
+}
+.zmgicon-localizacion:before {
+    content: "\e90c";
+}
+.zmgicon-logo-home:before {
+    content: "\e90d";
+}
+.zmgicon-logo-zeru-volver:before {
+    content: "\e90e";
+}
+.zmgicon-merendero:before {
+    content: "\e90f";
+}
+.zmgicon-parking:before {
+    content: "\e910";
+}
+.zmgicon-pico-secundario:before {
+    content: "\e911";
+}
+.zmgicon-pico:before {
+    content: "\e912";
+}
+.zmgicon-play-cuerno:before {
+    content: "\e913";
+}
+.zmgicon-refugio:before {
+    content: "\e914";
+}
+.zmgicon-rosa-vientos:before {
+    content: "\e915";
+}
+.zmgicon-ruta-circular:before {
+    content: "\e916";
+}
+.zmgicon-ruta-dificil:before {
+    content: "\e917";
+}
+.zmgicon-ruta-facil:before {
+    content: "\e918";
+}
+.zmgicon-ruta-moderada:before {
+    content: "\e919";
+}
+.zmgicon-servicios:before {
+    content: "\e91a";
+}
+.zmgicon-sobre-zerumuga:before {
+    content: "\e91b";
+}
+.zmgicon-tiempo:before {
+    content: "\e91c";
+}
+.zmgicon-vista-mapa:before {
+    content: "\e91d";
+}
+.zmgicon-vista-satelite:before {
+    content: "\e91e";
+}
+.zmgicon-x:before {
+    content: "\e91f";
+}
+
+
+
+/* Main */
+body{
+	font-family: Raleway;
+	color: $f-grey;
+}
+
+h1{
+	font-family: Amaranth;
+	font-size: 1.8em;
+}
+
+h2{
+	font-family: Raleway;
+	font-size: 1.4em;
+}
+
+h3{
+	font-family: Raleway;
+	font-size: 1.3em;
+}
+
+p,a,span,label{
+	font-family: Raleway;
+	font-size: 1em;
+}
+
+a{
+	text-decoration:none;
+}
+
+.bg-grey{
+	background-color: $bg-grey;
+}
+
+.hidden-tablet br{
+	@media (min-width: 400px){
+		display: none;
+	}
+}
+
+
+
+/* Brand */
+.mini-brand{
+	height: $gutter * 3;
+	a{
+		height: 100%;
+		display: inline-block;
+		span{
+			color: $light;
+			font-size: $gutter * 3;
+		}
+	}
+}
+
+
+
+/*Home screen */
+.splash-moving-img{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	-webkit-animation-name:splashMovingImg;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction:initial;
+	-webkit-animation-fill-mode: normal;
+	-webkit-animation-play-state: running;
+	animation-name:splashMovingImg;
+	animation-duration: 30s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction:initial;
+	animation-fill-mode: normal;
+	animation-play-state: running;
+	transform-origin: 50% 50%;
+	// @include prefixer(transition,.2s all ease-in-out);
+	img{
+		height: 75%;
+		position: relative;
+		left: 50%;
+		top: 0;
+		@include prefixer(transform,translate(-50%,0));
+	}
+}
+
+.home-screen{
+	header{
+		position: relative;
+		text-align: center;
+		padding: $gutter * 5 $gutter 0;
+		img{
+			max-width: 200px;
+			display: inline-block;
+			@media (min-width: 768px){
+				max-width: 250px;
+			}
+		}
+
+		h1{
+			font-family: Amaranth;
+			font-size: 1.6em;
+			font-weight: 600;
+			margin-top: 0;
+			margin-bottom: $gutter;
+		}
+	}
+}
+
+/* Experience list*/
+.experiences-list{
+	position: relative;
+	.experiences-list-item{
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 160px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-color: $light;
+
+		&.exp-disabled{
+			background-color: #ccc;
+			h2{
+				color: rgba(255,255,255,0.5);
+			}
+		}
+
+		@media (min-width: 400px){
+			background-position: 0 25px;
+		}
+		@media (min-width: 490px){
+			background-position: 0 20px;
+		}
+		@media (min-width: 600px){
+			height: 200px;
+			background-position: 0 30px;
+		}
+		@media (min-width: 700px){
+			background-position: 0 10px;
+		}
+		@media (min-width: 768px){
+			background-position: 0 5px;
+		}
+		@media (min-width: 800px){
+			height: 250px;
+			background-position: 0 6px;
+		}
+		&:first-child{
+			background-color: transparent;
+		}
+		h2{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $light;
+			padding: $gutter;
+			font-size: 1.4em;
+			margin: 0;
+			font-weight: 500;
+			small{
+				font-size: 0.8em;
+				display: block;
+			}
+		}
+	}
+}
+
+/* Menu */
+.zmg-menu-backdrop{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.9);
+	position: fixed;
+	z-index: 10;
+	display: none;
+}
+
+.zmg-menu{
+	position: absolute;
+	top: $gutter;
+	right: $gutter;
+	z-index: 20;
+	a{
+		top: 0;
+		right: 0;
+		position:absolute;
+		text-align: center;
+		display: inline-block;
+		border: none;
+		width: $gutter * 3;
+		height: $gutter * 3;
+		border-radius: $gutter * 3;
+		padding: 0;
+		visibility: hidden;
+		background-color: $brown;
+		@include materialShadow(1);
+		@include prefixer(transition,all .35s ease-in-out);
+		&.dark-green{
+			background-color: $dark-green;
+		}
+		&.green{
+			background-color: $green;
+		}
+		&.yellow{
+			background-color: $yellow;
+		}
+		&.pink{
+			background-color: $pink;
+		}
+		&.green-fluor{
+			background-color: $green-fluor;
+		}
+		.icon{
+			font-size: 2.8em;
+			padding: 0;
+			color: $light;
+			line-height: $gutter * 3;
+		}
+		.text{
+			display: none;
+			font-family: Raleway;
+			color: $brown;
+			top: 0;
+			left: 0;
+			font-weight: 600;
+			font-size: 1em;
+			position: absolute;
+			padding-right: $gutter;
+			white-space: nowrap;
+			line-height: $gutter * 3;
+			@include prefixer(transform,translateX(-100%));
+		}
+		&.main-button{
+			background-color: $brown;
+			visibility: visible;
+			z-index: 99;
+		}
+	}
+}
+
+
+@include keyframes(splashMovingImg){
+	0%{
+		transform: scale(1) translate(0,0);
+		-webkit-transform:  scale(1) translate(0,0);
+	}
+	12%{
+		transform:scale(1.1) translate(-20px,2) ;
+		-webkit-transform: scale(1.1) translate(-20px,2);
+	}
+	25%{
+		transform: scale(1.2) translate(-40px,5px);
+		-webkit-transform: scale(1.2) translate(-40px,5px);
+	}
+	37%{
+		transform: scale(1.3) translate(-20px,8px);
+		-webkit-transform: scale(1.3) translate(-20px,8px);
+	}
+	50%{
+		transform: scale(1.4) translate(0,10px);
+		-webkit-transform:scale(1.4) translate(0,10px) ;
+	}
+	62%{
+		transform: scale(1.3) translate(20px,8px);
+		-webkit-transform: scale(1.3) translate(20px,8px);
+	}
+	75%{
+		transform:  scale(1.2) translate(40px,5px);
+		-webkit-transform: scale(1.2) translate(40px,5px);
+	}
+	87%{
+		transform: scale(1.1) translate(20px,2px);
+		-webkit-transform:  scale(1.1) translate(20px,2px);
+	}
+	100%{
+		transform: scale(1) translate(0,0);
+		-webkit-transform: scale(1)  translate(0,0);
+	}
+}
+
+/* Experience screen */
+.experience-screen{
+	
+	.experience-top-info,
+	.experience-images{
+		padding: 0;
+	}
+
+
+	section{
+		padding: $gutter * 2 $gutter;
+		h2{
+			text-align: left;
+
+		}
+	}
+
+	p{
+		text-align: left;
+
+	}
+
+	header{
+		padding: $gutter;
+		h1{
+			color: $light;
+		}
+
+		p{	
+			text-align: left;
+			color: $light;
+			font-weight: 500;
+		}
+	}
+
+	.experience-img{
+		display: block;
+		@media (min-width: 600px){
+			height: 200px;
+			overflow: hidden;
+		}
+		@media (min-width: 900px){
+			height: 240px;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.experience-mountains-short{
+		display: block;
+		padding: $gutter 0;
+		&.odd{
+			>.mountain:last-child{
+				// width: 100%;
+			}
+		}
+		.mountain{
+			display: inline-block;
+			width: 50%;
+			padding: $gutter;
+			@media (min-width: 768px){
+				width: 20%;
+			}
+
+			*{
+				display: block;
+				color: $light;
+				text-align: center;
+			}
+			.name{
+				text-transform: uppercase;
+				font-size: 1em;
+			}
+
+			.height{
+				font-weight: 600;
+				font-size: 1.6em;
+			}
+		}
+	}
+
+	.audio-player{
+		position : relative;
+		text-align: center;
+		padding-bottom: 0;
+		background-image: url(http://assets.zerumuga.eus/images/deiadar_mendiak/montes-bocineros-cuerno.png);
+		background-size: cover;
+		background-position: center;
+		padding-bottom: $gutter * 2;
+		@media (min-width: 678px){
+			min-height: 200px;
+		}
+		.play-button{
+			border-radius:0;
+			border: none;
+			background-color: transparent;
+			position: relative;
+			@media (min-width: 678px){
+				margin-top: $gutter * 2;
+			}
+			.icon{
+				font-size: 6em;
+				color: $brown;
+				margin-right: -7px;
+			}
+			img{
+				position: absolute;
+				bottom: -6px;
+				right: -21px;
+			}
+		}
+
+		.progbar{
+			width: 100%;
+			position:absolute;
+			left: 0;
+			bottom: 0;
+			display: block;
+			height: 5px;
+			border: none;
+			background-color: #c6c6c9;
+			margin: $gutter * 2 0 * 4 0;
+			
+			.time-left,
+			.time-right{
+				position: absolute;
+				top: -22px;
+			}
+			.time-left{
+				left: $gutter;
+			}
+			.time-right{
+				right: $gutter;
+			}
+			.progress{
+				height: 100%;
+				background-color: $brown;
+				float: left;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+.experience-mountains{
+
+	.mountain-list{
+		margin-left: -$gutter;
+		margin-right: -$gutter;
+		@media (min-width: 768px){
+			margin-top: $gutter * 2;
+		}
+		&:after{
+			content: "";
+			width: 100%;
+			display: table;
+		}
+	}
+	.mountain{
+		width: 100%;
+		margin-bottom: $gutter;
+		display: inline-block;
+		color: $f-grey;
+		position: relative;
+		float: left;
+		padding-left: $gutter;
+		padding-right: $gutter;
+		@media (min-width: 430px){
+			width: 50%;
+		}
+		@media (min-width: 769px){
+			width: 33.333333%;
+		}
+
+		.mountain-inner{
+			position: relative;
+			.button-360{
+				font-size: 0.95em;
+				font-family: Raleway;
+				color: $light;
+				font-weight: 600;
+				top: $gutter;
+				right: $gutter;
+				position: absolute;
+				width: $gutter * 4;
+				height: $gutter * 4;
+				background-image: none;
+				padding: 0;
+				border-radius: $gutter * 3;
+				border:none;
+				@include materialShadow(2);
+				.icon{
+					font-size: 4em;
+				}
+			}
+
+			.top-info{
+				padding: $gutter;
+				.name{
+					margin-top: 5px;
+					font-size: 1.4em;
+					margin-bottom: 5px;
+				}
+
+				.height{
+					font-size: 1.2em;
+				}
+
+				.name,
+				.height{
+					font-weight: 500;
+				}
+			}
+
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&.green-fluor{
+				border: 3px solid $green-fluor;
+				.button-360{
+					background-color: $green-fluor;
+				}
+			}
+
+			&.pink{
+				border: 3px solid $pink;
+				.button-360{
+					background-color: $pink;
+				}
+			}
+
+			&.dark-green{
+				border: 3px solid $dark-green;
+				.button-360{
+					background-color: $dark-green;
+				}
+			}
+
+			&.green{
+				border: 3px solid $green;
+				.button-360{
+					background-color: $green;
+				}
+			}
+
+			&.yellow{
+				border: 3px solid $yellow;
+				.button-360{
+					background-color: $yellow;
+				}
+			}
+
+			.info{
+				padding: $gutter;
+				@media (min-width: 430px){
+					height: 80px;
+				}
+
+				>p{
+					text-align: left;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			figure{
+				padding-top: 0;
+				width: 100%;
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.experience-images{
+	.slider-slide{
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+/* CartoDB map*/
+.cartodb-map-wrapper{
+	.cartodb-header{
+		display: none !important;
+	}
+	.leaflet-bottom .leaflet-control-attribution,
+	{
+		display: none;
+	}
+}
+
+.cartodb-logo,
+.cartodb-legend-stack,
+.leaflet-control-attribution{
+	display: none !important;
+}
+
+#map{
+	width: 100%;
+	height: 100%;
+}
+
+.basemap-button{
+	padding: 0;
+	width: $gutter * 3;
+    height: $gutter * 3;
+    position: absolute;
+    left: $gutter;
+    top: $gutter;
+    border: none;
+    background-color: $brown;
+    border-radius: $gutter * 3;
+    @include materialShadow(1);
+    .icon{
+    	font-size: 2.8em;
+    	color: $light;
+    }
+}
+
+.leaflet-control-zoom{
+	display:none;
+}
+
+
+
+.filter-button{
+	z-index: 20;
+	position: absolute;
+	top: - $gutter * 4;
+	right: $gutter;
+	width: $gutter * 3;
+	height: $gutter * 3;
+	background-color: $green-fluor;
+	@include materialShadow(1);
+	border-radius: $gutter * 3;
+	color: $light;
+	border:none;
+	padding: 0;
+	span{
+		font-size: 2.8em;
+	}
+}
+
+.filter{
+	z-index: 10px;
+	padding: $gutter 0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: auto;
+	left: 0;
+	background-color: $green-fluor;
+	@include materialShadow(1);
+	@include prefixer(transform,translateY(100%));
+	@include prefixer(transition,all .35s ease-in-out);
+	&.open{
+		@include prefixer(transform,translateY(0));
+	}
+
+	.filter-column{
+		padding-top: 0;
+		padding-bottom: 0;
+		text-align: center;
+		display: inline-block;
+		width: 25%;
+		@media (min-width:768px){
+			width: 16.66666666%;
+		}
+		@media (min-width:1024px){
+			width: 8.333333333%;
+		}
+		.filter-item{
+			position: relative;
+			width: $gutter * 3;
+			height: $gutter * 3;
+			border: 2px solid $light;
+			border-radius: $gutter * 3;
+			background-color: transparent;
+			padding: 0;
+			@include prefixer(transition,all .35s ease-in-out);
+			&:before{
+				content: "";
+				background-color: $light;
+				@include prefixer(transition,all .35s ease-in-out);
+				@include prefixer(transform,scale(0));
+				transform-origin: 50% 50%;
+				width: $gutter * 3;
+				height: $gutter * 3;
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				border-radius: $gutter * 3;
+				z-index:10
+			}
+			&.active{
+				&:before{
+					@include prefixer(transform,scale(1));
+				}
+
+				.icon{
+					color: $green-fluor; 
+				}
+			}
+			.icon{
+				top: 0;
+				position: relative;
+				font-size: 2.8em;
+				color: $light;
+				z-index: 20;
+			}
+		}
+
+		>span{
+			color: $light;
+			font-size: 0.85em;
+			font-weight: 600;
+			display: block;
+		}
+	}
+}
+
+.gorbeia{
+	.filter-button,
+	.filter{
+		background-color: $green-fluor;
+	}
+
+	.filter{
+		.filter-item{
+			&.active{
+				.icon{
+					color: $green-fluor;
+				}	
+			}
+		}
+	}
+}
+
+.kolitza{
+	.filter-button,
+	.filter{
+		background-color: $pink;
+	}
+
+	.filter{
+		.filter-item{
+			&.active{
+				.icon{
+					color: $pink;
+				}	
+			}
+		}
+	}
+}
+
+.sollube{
+	.filter-button,
+	.filter{
+		background-color: $yellow;
+	}
+
+	.filter{
+		.filter-item{
+			&.active{
+				.icon{
+					color: $yellow;
+				}	
+			}
+		}
+	}
+}
+
+.oiz{
+	.filter-button,
+	.filter{
+		background-color: $green;
+	}
+
+	.filter{
+		.filter-item{
+			&.active{
+				.icon{
+					color: $green;
+				}	
+			}
+		}
+	}
+}
+
+.ganekogorta{
+	.filter-button,
+	.filter{
+		background-color: $dark-green;
+	}
+
+	.filter{
+		.filter-item{
+			&.active{
+				.icon{
+					color: $dark-green;
+				}	
+			}
+		}
+	}
+}
+
+
+
+.mountain-screen{
+	.scroll-content{
+		width: 100%;	
+	}
+	&.gorbeia{
+		.scroll{
+			> header{
+				background-color: $green-fluor; 
+				background-image: url(../img/bg_gorbeia.png);
+				
+			}
+			> section{
+				&.geo-data{
+					background-color: $green-fluor; 
+				}
+			}
+		}
+	}
+
+	&.kolitza{
+		.scroll{
+			> header{
+				background-color: $pink; 
+				background-image: url(http://assets.zerumuga.eus/images/kolitza/img_profile_kolitza.png);
+			}
+
+			> section{
+				&.geo-data{
+					background-color: $pink; 
+				}
+			}
+		}
+	}
+
+	&.ganekogorta{
+		.scroll{
+			> header{
+				background-color: $dark-green; 
+				background-image: url(http://assets.zerumuga.eus/images/ganekogorta/img_profile_ganekogorta.png);
+			}
+
+			> section{
+				&.geo-data{
+					background-color: $dark-green; 
+				}
+			}
+		}
+	}
+
+	&.sollube{
+		.scroll{
+			> header{
+				background-color: $yellow; 
+				background-image: url(http://assets.zerumuga.eus/images/sollube/img_profile_sollube.png);
+			}
+
+			> section{
+				&.geo-data{
+					background-color: $yellow; 
+				}
+			}
+		}
+	}
+
+	&.oiz{
+		.scroll{
+			> header{
+				background-color: $green; 
+				background-image: url(http://assets.zerumuga.eus/images/oiz/img_profile_oiz.png);
+			}
+
+			> section{
+				&.geo-data{
+					background-color: $green; 
+				}
+			}
+		}
+	}
+
+	.scroll{
+		> header{
+			padding: $gutter $gutter $gutter * 4;
+			.mini-brand{
+				text-align: left;
+			}
+			@include materialShadow(2);
+			@media (min-width:480px){
+				padding-bottom: $gutter * 6;
+			}
+			@media (min-width:660px){
+				padding-bottom: $gutter * 8;
+			}
+			@media (min-width:900px){
+				padding-bottom: $gutter * 10;
+			}
+		}
+	}
+	header{
+		text-align: center;
+		background-size: 100% auto;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		position: relative;
+		h1{
+			color: $light;
+			font-weight: 600;
+			font-size: 2.2em;
+			margin-top: 0;
+			small{
+				font-family: Amaranth;
+				display: block; 
+				font-weight: 200;
+			}
+		}
+	}
+	
+
+	section{
+		padding: $gutter * 2 $gutter;
+	}
+	.geo-data{
+		height: $gutter * 12;
+		color: $light;
+		padding-top: $gutter;
+		@media (min-width: 768px){
+			height: 116px;
+		}
+		> div{
+			width: 50%;
+			float: left;
+			text-align: center ;
+			padding-top: 18px;
+
+			@media (min-width: 768px){
+				width: 33.33333%; 
+			}
+
+			&:last-child{
+				width: 100%;
+				@media (min-width: 768px){
+					width: 33.333333%;
+				}
+			}
+		}
+
+		.name{
+			text-transform: uppercase;
+		}
+
+
+		p{
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		.name{
+			font-size: 0.85em;
+			margin-bottom: 5px;
+		}
+
+		.value{
+			font-size: 1.6em;
+		}
+
+	}
+
+	
+	.information{
+		background-color: $bg-light-grey;
+		padding: 0 0 $gutter * 2;
+		.info-tabs{
+			.info-tabs-header{
+				width: 100%;
+				padding: $gutter * 2 $gutter $gutter;
+				&:after{
+					content: "";
+					width: 100%;
+					display: table;
+				}
+				li{
+					display: inline-block;
+					width: 33.3333%;
+					height: $gutter * 3;
+					text-align: center;
+					float: left;
+					margin-bottom: $gutter;
+					@media (min-width: 768px){
+						width: 20%;
+						margin: 0;
+						height: $gutter * 4;
+					}
+					@media (min-width: 900px){
+						height: $gutter * 6;
+					}
+					a{
+						display: inline-block;
+						font-size: 4em;
+						
+						span{
+							color: $brown;
+						}
+						@media (min-width: 768px){
+							font-size: 6em;
+						}
+						@media (min-width: 900px){
+							font-size: 7em;
+						}
+					}
+				}
+			}
+		}
+
+		.info-tabs-content{
+			padding-top: $gutter * 2;
+			&.active{
+				-webkit-animation-name: fadeIn;
+				-webkit-animation-duration: 1s;
+				animation-name: fadeIn;
+				animation-duration: 1s;
+			}
+			
+			> *{
+				padding-left: $gutter;
+				padding-right: $gutter;
+			}
+
+
+			.scroll-slider{
+				margin-top: $gutter * 2;
+				margin-bottom: -$gutter * 2;
+			}
+		}
+	}
+
+
+	&.gorbeia{
+		.info-tabs{
+			.info-tabs-header{
+				li{
+					a.active{
+						span{
+							color: $green-fluor;
+						}
+					}
+				}
+			}	
+		}
+	}
+	&.kolitza{
+		.info-tabs{
+			.info-tabs-header{
+				li{
+					a.active{
+						span{
+							color: $pink;
+						}
+					}
+				}
+			}	
+		}
+	}
+	&.sollube{
+		.info-tabs{
+			.info-tabs-header{
+				li{
+					a.active{
+						span{
+							color: $yellow;
+						}
+					}
+				}
+			}	
+		}
+	}
+	&.ganekogorta{
+		.info-tabs{
+			.info-tabs-header{
+				li{
+					a.active{
+						span{
+							color: $dark-green;
+						}
+					}
+				}
+			}	
+		}
+	}
+	&.oiz{
+		.info-tabs{
+			.info-tabs-header{
+				li{
+					a.active{
+						span{
+							color: $green;
+						}
+					}
+				}
+			}	
+		}
+	}
+
+	.routes-list{
+		padding: 0;
+		>header{
+			display: block;
+			height: $gutter * 4;
+			padding: 0 0 0 $gutter;
+			text-align: left;
+			.title{
+				display: inline-block;
+
+				>.icon{
+					font-size: $gutter * 3;
+					width: $gutter * 3;
+					height: $gutter * 3;
+					border-radius: $gutter * 3;
+					background-color: $light;
+					margin-top: $gutter / 2;
+					display: inline-block; 
+					vertical-align: top;
+					margin-right: $gutter;
+				}
+				p{
+					display: inline-block;
+					vertical-align: top;
+					line-height: $gutter * 4;
+					color: $light;
+					font-weight: 600;
+				}
+			}
+
+			a{
+				width: $gutter * 8;
+				height: $gutter * 4;
+				float: right;
+				display: inline-block;
+				text-align: center;
+				font-size: 3.4em;
+				color: $light;
+				line-height: $gutter * 4;
+				@media (min-width: 768px){
+					width: 50%;
+				}
+			}
+		}
+
+		.routes-list-body{
+			width: 100%;
+			display: block;
+			padding: 0 $gutter;
+			&:after{
+				content: "";
+				width: 100%;
+				display: table; 
+			}
+			.routes-list-row{
+				margin-left: -$gutter;
+				margin-right: -$gutter;
+				.routes-list-col{
+					padding: $gutter;
+					width: 100%;
+					float: left;
+					@media (min-width: 768px){
+						width: 50%;
+					}
+					@media (min-width: 900px){
+						width: 33.33333%;
+					}
+					.route{
+						background-color: $light;
+						header{
+							img{
+								position: relative;
+								width: 100%;
+							}
+						}
+
+						.route-body{
+							padding: $gutter;
+							h4{
+								font-size: 1.2em;
+								font-weight: 500;
+								font-family: Raleway;
+							}
+
+							p{
+								.icon{
+									top: 8px;	
+									position: relative;
+									margin-right: $gutter;
+									font-size: 2em;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	&.gorbeia{
+		.routes-list{
+			background-color: $green-fluor;
+			>header{
+				border-bottom: 2px solid $dark-green-fluor;
+				a{
+					background-color: $dark-green-fluor;
+				}
+			}
+
+			.route{
+				border: 2px solid $dark-green-fluor;
+				.route-body{
+					p{
+						.icon{
+							color: $dark-green-fluor;
+						}
+					}
+				}
+			}
+
+			>header{
+				.title{
+					>.icon{	
+						color: $green-fluor;
+					}
+				}
+			}
+		}
+	}
+
+	&.kolitza{
+		.routes-list{
+			background-color: $pink;
+			>header{
+				border-bottom: 2px solid darken($pink,10%);
+				a{
+					background-color: darken($pink,10%);
+				}
+			}
+
+			.route{
+				border: 2px solid darken($pink,10%);
+				.route-body{
+					p{
+						.icon{
+							color: darken($pink,10%);
+						}
+					}
+				}
+			}
+
+			>header{
+				.title{
+					>.icon{	
+						color: $pink;
+					}
+				}
+			}
+		}
+	}
+	&.ganekogorta{
+		.routes-list{
+			background-color: $dark-green;
+			>header{
+				border-bottom: 2px solid darken($dark-green,10%);
+				a{
+					background-color: darken($dark-green,10%);
+				}
+			}
+
+			.route{
+				border: 2px solid darken($dark-green,10%);
+				.route-body{
+					p{
+						.icon{
+							color: darken($dark-green,10%);
+						}
+					}
+				}
+			}
+			>header{
+				.title{
+					>.icon{	
+						color: $dark-green;
+					}
+				}
+			}
+		}
+	}
+
+	&.sollube{
+		.routes-list{
+			background-color: $yellow;
+			>header{
+				border-bottom: 2px solid darken($yellow,10%);
+				a{
+					background-color: darken($yellow,10%);
+				}
+			}
+
+			.route{
+				border: 2px solid darken($yellow,10%);
+				.route-body{
+					p{
+						.icon{
+							color: darken($yellow,10%);
+						}
+					}
+				}
+			}
+			>header{
+				.title{
+					>.icon{	
+						color: $yellow;
+					}
+				}
+			}
+		}
+	}
+
+	&.oiz{
+		.routes-list{
+			background-color: $green;
+			>header{
+				border-bottom: 2px solid darken($green,10%);
+				a{
+					background-color: darken($green,10%);
+				}
+			}
+
+			.route{
+				border: 2px solid darken($green,10%);
+				.route-body{
+					p{
+						.icon{
+							color: darken($green,10%);
+						}
+					}
+				}
+			}
+
+			>header{
+				.title{
+					>.icon{	
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+
+
+	.banner-360{
+		padding: 0;
+		background-size: cover;
+		background-position: center;
+		a{
+			display: block;
+			height: 200px;
+			padding-top: 80px;
+			h2{
+				font-family: Amaranth;
+				color: $light;
+				font-size: 2em;
+				text-align: center;
+			}
+		}
+	}
+	
+}
+
+.zmg-slider{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: $gutter * 2;
+	position: relative;
+	.zmg-slider-item{
+		width: 100%;
+		position: relative;
+		display: block;
+		float: left;
+		white-space: nowrap;
+		display: none;
+		img{
+			width: 100%;
+		}
+
+	}
+}
+
+.scroll-slider{
+	position:relative;
+	padding: 0 !important;
+	width: 100%;
+	nav{
+		height: 200px;
+		display: block;
+		ul{
+			display: flex;
+			position: relative;
+			float: left;
+			li{
+				position: relative;
+				display: inline-flex;
+				float: left;
+				img{
+					max-height: 200px;
+				}
+			}
+		}
+	}
+}
+
+@include keyframes(fadeIn){
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/* Credits screen */
+.credits-screen{
+	background-color: $bg-grey;
+	.main-section{
+		padding: $gutter;
+		height: 100%;
+		section{
+			padding-bottom: $gutter * 2;
+			max-width: 400px;
+			margin: 0 auto;
+			&.featured{
+				p,>a{
+					font-size: 1.2em;
+				}
+			}
+
+			>a{
+				display: block;
+				color: $f-grey;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+		}
+
+
+
+		.worko-logo{
+			text-align: center;
+			img{
+				display: inline-block;
+				max-width: 240px;
+			}
+		}
+	}
+}
+
+
+.about-screen{
+	.main-section{
+		section{
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+.about-screen,
+.credits-screen{
+	background-color: $bg-grey;
+	.main-section{
+		padding: $gutter;
+		h1{
+			text-align: center;
+			color: $light;
+			margin-bottom: $gutter;
+			margin-top: $gutter;
+		}
+
+		h2{
+			text-align: center;
+			color: $light;
+			margin-bottom: $gutter;
+			font-family: Amaranth;
+			font-size: 1.5em;
+		}
+
+		p{
+			text-align: center;
+			color: $light;
+			font-weight: 500;
+			&.bigger{
+				font-size: 1.4em;
+			}
+			a{
+				color: $f-grey;
+				font-weight: 400;
+			}
+		}
+
+
+	}
+	.about-img{
+		 width: 100%;
+		 display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

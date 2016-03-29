@@ -1,0 +1,24 @@
+
+<ion-view>
+	<ion-content>
+		<span class="splash-moving-img"><img src="img/bg_home.jpg"/></span>
+		<section class="home-screen">	
+			<header>
+				<div class="brand">
+					<img src="img/logo_home.svg"/>
+				</div>
+				<p>Euskal mendiak ezagutu <span class="hidden-tablet"><br></span>esperientzia ezberdinen bidez.<br>Aukera ezazu zeurea.</p>
+			</header>
+			<section class="experiences-list">
+				<a 	class="experiences-list-item {{experience.class}}"
+					ng-class="!experience.available ? 'exp-disabled': ''" 
+					ng-href="{{experience.url}}" 
+					ng-repeat="experience in experiences"
+					style="background-image:url('img/{{experience.bg}}')">
+					<h2>{{experience.name}}<small ng-show="!experience.available">Laster erabilgarri</small></h2>
+				</a>
+			</section>
+		</section>
+	</ion-content>
+</ion-view>
+

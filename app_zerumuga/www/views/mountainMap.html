@@ -1,0 +1,23 @@
+
+<section class="{{mountain.id}}">
+	<div id="map" on-tap="tapMap($event)">
+	</div>
+
+	<button class="basemap-button" ng-click="toggleBasemap()">
+		<span ng-show="basemap === 1" class="icon zmgicon-vista-satelite"></span>
+		<span ng-show="basemap === 2" class="icon zmgicon-vista-mapa"></span>
+	</button>
+
+	<div class="filter" ng-class="filter.opened ? 'open' : ''">
+		<button class="filter-button" ng-click="filter.toggle()">
+			<span class="zmgicon-filtro"></span>
+		</button>
+
+		<div class="filter-content">
+			<div class="filter-column" ng-repeat="item in filter.items">
+				<button class="filter-item" ng-click="filter.switchItem(item)" ng-class="item.active ? 'active' : ''"><span class="icon {{item.icon}}"></span></button>
+		  		<span>{{item.text}}</span>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,76 @@
+<ion-view>
+	<ion-content class="experience-screen" overflow-scroll="true">
+		<section class="bg-grey experience-top-info">
+			<header>
+				<div class="mini-brand">
+					<a ng-href="#/"><span class="zmgicon-logo-zeru-volver"></span></a>
+				</div>
+				<h1>{{experience.title}}</h1>
+				<div class="main-info" ng-bind-html="experience.description">
+				</div>
+			</header>
+			<div class="experience-img">
+				<img src="{{experience.bg}}" />
+			</div>
+			<section class="experience-mountains-short {{mountainListClass}}">
+				<div class="mountain" ng-repeat="mountain in experience.mountainList">
+					<p class="name">{{mountain.name}}</p>
+					<p class="height">{{mountain.height}}m</p>
+				</div>
+			</section>
+		</section>
+
+		<section class="audio-player">
+			<button ng-click="playAudio()" class="play-button">
+				<span class="icon zmgicon-play-cuerno"></span>
+			</button>
+			<div class="progbar">
+		        <span class="time-left">{{currentAudio.currentTime}}</span>
+		        <span class="time-right">{{currentAudio.duration}}</span>
+		        <span class="progress"></span>
+		    </div>
+		    <audio>
+		        <source ng-src="http://assets.zerumuga.eus/audio/cuerno.mp3" type="audio/mp3">
+		        Your browser does not support the audio tag.
+	      	</audio>
+
+		</section>
+
+		<section class="experience-mountains">
+			<div ng-bind-html="experience.mountainListDescription">
+				<h2>Mendiak</h2>
+			</div>
+			<div class="mountain-list">
+				<a ng-href="#/mountain/{{mountain.id}}" class="mountain" ng-repeat="mountain in experience.mountainList">
+					<div class="mountain-inner {{mountain.color}}">
+						<button ng-click="openLink('{{mountain.link360}}','_system','location=yes')" class="button-360">
+							<span class="icon zmgicon-360-sphere"></span>
+						</button>
+						<div class="top-info">
+							<p class="name">{{mountain.name}}</p>
+							<p class="height">{{mountain.height}}m</p>
+						</div>
+						<figure>
+							<img ng-src="img/{{mountain.profile}}"/>
+						</figure>
+						<div class="info">
+							<p>{{mountain.shortDescription}}</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</section>
+		<section ng-bind-html="experience.longDescription"></section>
+		<section class="experience-images">
+			<ion-scroll ng-show="experience.images" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
+				<nav>
+					<ul>
+						<li ng-repeat="image in experience.images">
+							<img ng-src="{{image.url}}"/>
+						</li>
+					</ul>
+				</nav>
+			</ion-scroll>
+		</section>
+	</ion-content>
+</ion-view>
