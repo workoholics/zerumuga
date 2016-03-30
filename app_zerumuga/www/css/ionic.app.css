@@ -10175,6 +10175,10 @@ a {
   .hidden-tablet br {
     display: none; } }
 
+@media (min-width: 769px) {
+  .tablet-c80 p {
+    max-width: 80%; } }
+
 /* Brand */
 .mini-brand {
   height: 45px; }
@@ -10439,6 +10443,9 @@ a {
     text-align: left;
     color: #fff;
     font-weight: 500; }
+    @media (min-width: 768px) {
+      .experience-screen header p {
+        max-width: 80%; } }
 
 .experience-screen .experience-img {
   display: block; }
@@ -11171,7 +11178,6 @@ a {
 .credits-screen {
   background-color: #c9c6c6; }
   .credits-screen .main-section {
-    padding: 15px;
     height: 100%; }
     .credits-screen .main-section section {
       padding-bottom: 30px;
@@ -11184,6 +11190,9 @@ a {
         color: #232323;
         text-align: center;
         margin-bottom: 10px; }
+      .credits-screen .main-section section img {
+        margin-top: 15px;
+        max-width: 240px; }
     .credits-screen .main-section .worko-logo {
       text-align: center; }
       .credits-screen .main-section .worko-logo img {

@@ -21,7 +21,7 @@
 			</div>
 		</section>
 
-		<section class="short-description" ng-bind-html="mountain.shortDescription"></section>
+		<section class="short-description tablet-c80" ng-bind-html="mountain.shortDescription"></section>
 		<section class="banner-360" style="background-image:url('{{mountain.img360.bg}}')">
 			<a ng-click="openLink('{{mountain.img360.link}}','_system','location=yes')">
 				<h2>Gailurra 360ºtan</h2>
@@ -54,7 +54,7 @@
 
 				<div ng-class="mountain.information.situation && infoTabs.active === 'situation' ? 'active' : ''" ng-show="mountain.information.situation && infoTabs.active === 'situation'" class="info-tabs-content">
 					<h3>{{mountain.information.situation.title}}</h3>
-					<div ng-bind-html="mountain.information.situation.text"></div>
+					<div class="tablet-c80" ng-bind-html="mountain.information.situation.text"></div>
 					<ion-scroll ng-show="mountain.information.situation.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 						<nav>
 							<ul>
@@ -67,7 +67,7 @@
 				</div>
 				<div ng-class="mountain.information.geology && infoTabs.active === 'geology' ? 'active' : ''" ng-show="mountain.information.geology && infoTabs.active === 'geology'" class="info-tabs-content">
 					<h3>{{mountain.information.geology.title}}</h3>
-					<div ng-bind-html="mountain.information.geology.text"></div>
+					<div class="tablet-c80" ng-bind-html="mountain.information.geology.text"></div>
 					<ion-scroll ng-show="mountain.information.geology.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 						<nav>
 							<ul>
@@ -80,7 +80,7 @@
 				</div>
 				<div ng-class="mountain.information.flora && infoTabs.active === 'flora' ? 'active' : ''" ng-show="mountain.information.flora && infoTabs.active === 'flora'" class="info-tabs-content">
 					<h3>{{mountain.information.flora.title}}</h3>
-					<div ng-bind-html="mountain.information.flora.text"></div>
+					<div class="tablet-c80" ng-bind-html="mountain.information.flora.text"></div>
 					<ion-scroll ng-show="mountain.information.flora.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 						<nav>
 							<ul>
@@ -93,7 +93,7 @@
 				</div>
 				<div ng-class="mountain.information.weather && infoTabs.active === 'weather' ? 'active' : ''" ng-show="mountain.information.weather && infoTabs.active === 'weather'" class="info-tabs-content">
 					<h3>{{mountain.information.weather.title}}</h3>
-					<div ng-bind-html="mountain.information.weather.text"></div>
+					<div class="tablet-c80" ng-bind-html="mountain.information.weather.text"></div>
 					<ion-scroll ng-show="mountain.information.weather.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 						<nav>
 							<ul>
@@ -106,7 +106,7 @@
 				</div>
 				<div ng-class="mountain.information.fauna && infoTabs.active === 'fauna' ? 'active' : ''" ng-show="mountain.information.fauna && infoTabs.active === 'fauna'" class="info-tabs-content">
 					<h3>{{mountain.information.fauna.title}}</h3>
-					<div ng-bind-html="mountain.information.fauna.text"></div>
+					<div class="tablet-c80" ng-bind-html="mountain.information.fauna.text"></div>
 					<ion-scroll ng-show="mountain.information.fauna.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 						<nav>
 							<ul>
@@ -119,7 +119,7 @@
 				</div>
 				<div ng-show="mountain.information.services && infoTabs.active === 'services'" class="info-tabs-content">
 					<h3>{{mountain.information.services.title}}</h3>
-					<div ng-bind-html="mountain.information.services.text"></div>
+					<div class="tablet-c80" ng-bind-html="mountain.information.services.text"></div>
 					<ion-scroll ng-show="mountain.information.services.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 						<nav>
 							<ul>
@@ -134,7 +134,7 @@
 		</section>
 		<section ng-show="mountain.textImageBlock">
 			<h3>{{mountain.textImageBlock.title}}</h3>
-			<div ng-bind-html="mountain.textImageBlock.text">
+			<div class="tablet-c80" ng-bind-html="mountain.textImageBlock.text">
 			</div>
 		</section>
 		<ion-scroll ng-show="mountain.textImageBlock.slider" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
@@ -148,7 +148,7 @@
 		</ion-scroll>
 		<section ng-show="mountain.routes.text">
 			<h3>{{mountain.routes.title}}</h3>
-			<div ng-bind-html="mountain.routes.text">
+			<div class="tablet-c80" ng-bind-html="mountain.routes.text">
 			</div>
 		</section>
 		<section class="routes-list">

@@ -37,8 +37,7 @@
 		</section>
 
 		<section class="experience-mountains">
-			<div ng-bind-html="experience.mountainListDescription">
-				<h2>Mendiak</h2>
+			<div class="tablet-c80" ng-bind-html="experience.mountainListDescription">
 			</div>
 			<div class="mountain-list">
 				<a ng-href="#/mountain/{{mountain.id}}" class="mountain" ng-repeat="mountain in experience.mountainList">
@@ -60,7 +59,7 @@
 				</a>
 			</div>
 		</section>
-		<section ng-bind-html="experience.longDescription"></section>
+		<section class="tablet-c80" ng-bind-html="experience.longDescription"></section>
 		<section class="experience-images">
 			<ion-scroll ng-show="experience.images" class="scroll-slider" scrollbar-x="false" zooming="false" direction = "x" has-bouncing="true">
 				<nav>

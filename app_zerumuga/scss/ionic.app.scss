@@ -303,6 +303,14 @@ a{
 	}
 }
 
+.tablet-c80{
+	p{
+		@media (min-width: 769px){
+			max-width: 80%;
+		}
+	}
+}
+
 
 
 /* Brand */
@@ -359,6 +367,7 @@ a{
 		position: relative;
 		text-align: center;
 		padding: $gutter * 5 $gutter 0;
+		// padding: $gutter * 6 $gutter 0; //ios
 		img{
 			max-width: 200px;
 			display: inline-block;
@@ -450,6 +459,7 @@ a{
 .zmg-menu{
 	position: absolute;
 	top: $gutter;
+	// top: $gutter * 2; //ios
 	right: $gutter;
 	z-index: 20;
 	a{
@@ -569,11 +579,11 @@ a{
 
 	p{
 		text-align: left;
-
 	}
 
 	header{
 		padding: $gutter;
+		// padding: $gutter * 2 $gutter $gutter; // ios
 		h1{
 			color: $light;
 		}
@@ -582,6 +592,9 @@ a{
 			text-align: left;
 			color: $light;
 			font-weight: 500;
+			@media (min-width:768px){
+				max-width: 80%;
+			}	
 		}
 	}
 
@@ -867,7 +880,8 @@ a{
     height: $gutter * 3;
     position: absolute;
     left: $gutter;
-    top: $gutter;
+    top: $gutter; 
+    // top: $gutter * 2; //ios
     border: none;
     background-color: $brown;
     border-radius: $gutter * 3;
@@ -1149,6 +1163,7 @@ a{
 	.scroll{
 		> header{
 			padding: $gutter $gutter $gutter * 4;
+			// padding: $gutter * 2 $gutter $gutter * 4; //ios
 			.mini-brand{
 				text-align: left;
 			}
@@ -1696,7 +1711,6 @@ a{
 .credits-screen{
 	background-color: $bg-grey;
 	.main-section{
-		padding: $gutter;
 		height: 100%;
 		section{
 			padding-bottom: $gutter * 2;
@@ -1713,6 +1727,11 @@ a{
 				color: $f-grey;
 				text-align: center;
 				margin-bottom: 10px;
+			}
+
+			img{
+				margin-top: $gutter;
+				max-width: 240px;
 			}
 		}
 
@@ -1744,6 +1763,7 @@ a{
 	background-color: $bg-grey;
 	.main-section{
 		padding: $gutter;
+		// padding: $gutter * 2 $gutter $gutter; //ios 
 		h1{
 			text-align: center;
 			color: $light;
